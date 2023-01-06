@@ -43,7 +43,7 @@ class PickCardViewController: UIViewController {
         imageChoosen = imageView.image
         print(imageChoosen)
         performSegue(withIdentifier: "toSecondVC", sender: nil)
-        
+        print("test")
         
     }
     
