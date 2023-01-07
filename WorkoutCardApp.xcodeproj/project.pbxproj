@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED9E448C2969928F00EEA7D4 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E448B2969928F00EEA7D4 /* ExerciseViewController.swift */; };
+		ED9E449229699E1700EEA7D4 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED9E449129699E1700EEA7D4 /* alarm_sound.mp3 */; };
 		EDB99877296834BF0073EE8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB99876296834BF0073EE8A /* AppDelegate.swift */; };
 		EDB99879296834BF0073EE8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB99878296834BF0073EE8A /* SceneDelegate.swift */; };
 		EDB9987B296834BF0073EE8A /* PickCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9987A296834BF0073EE8A /* PickCardViewController.swift */; };
@@ -15,9 +17,12 @@
 		EDB99883296834C00073EE8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB99881296834C00073EE8A /* LaunchScreen.storyboard */; };
 		EDB9988B296839EB0073EE8A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9988A296839EB0073EE8A /* ResultViewController.swift */; };
 		EDB9988D29683BE80073EE8A /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9988C29683BE80073EE8A /* Images.swift */; };
+		EDB9988F296850C10073EE8A /* UIImage + Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9988E296850C10073EE8A /* UIImage + Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED9E448B2969928F00EEA7D4 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		ED9E449129699E1700EEA7D4 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		EDB99873296834BF0073EE8A /* WorkoutCardApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutCardApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB99876296834BF0073EE8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB99878296834BF0073EE8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		EDB99884296834C00073EE8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDB9988A296839EB0073EE8A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		EDB9988C29683BE80073EE8A /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		EDB9988E296850C10073EE8A /* UIImage + Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED9E448D2969996900EEA7D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9987A296834BF0073EE8A /* PickCardViewController.swift */,
+				EDB9988A296839EB0073EE8A /* ResultViewController.swift */,
+				ED9E448B2969928F00EEA7D4 /* ExerciseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		ED9E448E2969997800EEA7D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9988C29683BE80073EE8A /* Images.swift */,
+				EDB9988E296850C10073EE8A /* UIImage + Ex.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ED9E448F2969998200EEA7D4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EDB99876296834BF0073EE8A /* AppDelegate.swift */,
+				EDB99878296834BF0073EE8A /* SceneDelegate.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ED9E44902969998A00EEA7D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EDB9987C296834BF0073EE8A /* Main.storyboard */,
+				EDB9987F296834C00073EE8A /* Assets.xcassets */,
+				EDB99881296834C00073EE8A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EDB9986A296834BF0073EE8A = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +104,12 @@
 		EDB99875296834BF0073EE8A /* WorkoutCardApp */ = {
 			isa = PBXGroup;
 			children = (
-				EDB99876296834BF0073EE8A /* AppDelegate.swift */,
-				EDB99878296834BF0073EE8A /* SceneDelegate.swift */,
-				EDB9987A296834BF0073EE8A /* PickCardViewController.swift */,
-				EDB9988A296839EB0073EE8A /* ResultViewController.swift */,
-				EDB9988C29683BE80073EE8A /* Images.swift */,
-				EDB9987C296834BF0073EE8A /* Main.storyboard */,
-				EDB9987F296834C00073EE8A /* Assets.xcassets */,
-				EDB99881296834C00073EE8A /* LaunchScreen.storyboard */,
+				ED9E448F2969998200EEA7D4 /* Services */,
+				ED9E448D2969996900EEA7D4 /* Controllers */,
+				ED9E448E2969997800EEA7D4 /* Model */,
+				ED9E44902969998A00EEA7D4 /* View */,
 				EDB99884296834C00073EE8A /* Info.plist */,
+				ED9E449129699E1700EEA7D4 /* alarm_sound.mp3 */,
 			);
 			path = WorkoutCardApp;
 			sourceTree = "<group>";
@@ -133,6 +174,7 @@
 			files = (
 				EDB99883296834C00073EE8A /* LaunchScreen.storyboard in Resources */,
 				EDB99880296834C00073EE8A /* Assets.xcassets in Resources */,
+				ED9E449229699E1700EEA7D4 /* alarm_sound.mp3 in Resources */,
 				EDB9987E296834BF0073EE8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB9988D29683BE80073EE8A /* Images.swift in Sources */,
+				ED9E448C2969928F00EEA7D4 /* ExerciseViewController.swift in Sources */,
 				EDB9987B296834BF0073EE8A /* PickCardViewController.swift in Sources */,
+				EDB9988F296850C10073EE8A /* UIImage + Ex.swift in Sources */,
 				EDB99877296834BF0073EE8A /* AppDelegate.swift in Sources */,
 				EDB99879296834BF0073EE8A /* SceneDelegate.swift in Sources */,
 				EDB9988B296839EB0073EE8A /* ResultViewController.swift in Sources */,

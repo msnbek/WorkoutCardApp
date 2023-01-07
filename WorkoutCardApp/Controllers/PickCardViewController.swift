@@ -41,9 +41,9 @@ class PickCardViewController: UIViewController {
         imageView.isUserInteractionEnabled = true
         
         imageChoosen = imageView.image
-        print(imageChoosen)
+       
         performSegue(withIdentifier: "toSecondVC", sender: nil)
-        print("test")
+      
         
     }
     
